@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Extractor</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        padding: 24px;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #1f2a44;
+        text-align: center;
+        margin: 0 0 24px 0;
+      }
+      .button-group {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+      button {
+        background-color: #0073b1;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+      button:hover {
+        background-color: #005582;
+        transform: translateY(-2px);
+      }
+      button:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 115, 177, 0.3);
+      }
+      button:disabled {
+        background-color: #94a3b8;
+        cursor: not-allowed;
+      }
+      #result {
+        background-color: #f9fafb;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        padding: 16px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #374151;
+        min-height: 100px;
+        transition: opacity 0.3s ease;
+        word-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>LinkedIn Extractor</h1>
+      <div class="button-group">
+        <button id="extractBtn1">Extract Candidates</button>
+        <button id="extractBtn2">Extract Leads</button>
+      </div>
+      <div id="result">Click a button to extract data</div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
